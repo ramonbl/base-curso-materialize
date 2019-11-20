@@ -1,0 +1,49 @@
+extends config/template
+
+prepend COMMENTS
+  // --- prepend block COMMENTS desde curso.pug ---
+  // SOY curso.pug
+  // --- end block COMMENTS desde curso.pug
+  |
+  |
+append CONFIG
+  // --- append block CONFIG desde curso.pug---
+  -
+    var siteName = 'RamonBL'
+    var pageTitle = 'Index'
+    var currentPage = `index`
+    var dirCss = `css`
+
+  // nombre del sitio actualizado...
+  // titulo de la página actualizado...
+  // nombre de la página actualizado...
+
+  // --- end append CONFIG desde curso.pug---
+  |
+  |
+append HEADER
+  // --- append HEADER desde curso.pug ---
+
+  // --- end append HEADER desde curso.pug ---
+  |
+  |
+
+append FOOTER
+  // --- append FOOTER desde curso.pug ---
+  // no lo modifico
+  // --- end append FOOTER desde curso.pug ---
+
+block FINAL_SCRIPTS
+  // --- append FINAL_SCRIPTS desde curso.pug ---
+  //
+  // --- end append FINAL_SCRIPTS desde curso.pug ---
+  |
+  |
+block MAIN
+  // --- block MAIN desde curso.pug ---
+  p Estás en el index 
+    a(href="pages/home.html") Ir al home
+
+  //- p hola capullo
+  //- a(href="pages/curso.html") Ir a curso...
+  // --- end block MAIN desde curso.pug ---

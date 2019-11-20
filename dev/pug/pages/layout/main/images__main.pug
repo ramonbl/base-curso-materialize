@@ -1,0 +1,108 @@
+// --- init images__main
+
+// ## Images
+  /**
+  * Remove the border on images inside links in IE 10-.
+  */
+  img {
+    border-style: none;
+  }
+
+  img.responsive-img,
+  video.responsive-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /**
+  * Add the correct display in IE 9-.
+  * 1. Add the correct display in IE.
+  */
+  figcaption,
+  figure,
+  main {
+    /* 1 */
+    display: block;
+  }
+
+  /**
+  * Add the correct margin in IE 8.
+  */
+  figure {
+    margin: 1em 40px;
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+h2 Imágenes
+p Encoge el width hasta que veas el efecto responsive. Evita el desbordamiento._default_
+p Las imágenes no crecen más de su tamaño natural pero si se encogen si no caben
+
+figure.yellow
+  img(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+figure.orange
+  img.responsive-img(src="https://placeimg.com/200/200/any" alt="imagen 200x200 no responsive")
+
+.row.black
+  .col.s12.green.lighten-3
+    img(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+  .col.s12.green.lighten-3
+    img.responsive-img(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+
+.row.black
+  .col.s6.green.lighten-3
+    img(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+  .col.s6.green.lighten-3
+    img.responsive-img(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+
+
+.row.black
+  .col.s12.green.lighten-3
+    img.circle(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+  .col.s12.green.lighten-3
+    img.responsive-img.circle(src="https://placeimg.com/200/200/any", alt="imagen 200x200 no responsive")
+
+h3 Buen momento para investigar 
+  code offset-m2 
+  | y que provoca en los
+  code .row.col
+
+.row
+  .col.s12.m8.offset-m2.l6.offset-l3
+    .card-panel.grey.lighten-5.z-depth-1
+      .row.valign-wrapper
+        .col.s2
+          img.circle.responsive-img(src='https://placeimg.com/200/200/any' alt='')
+          // notice the "circle" class
+        .col.s10
+          span.black-text
+            | This is a square image. Add the &quot;circle&quot; class to it to make it appear circular.
+            | This is a square image. Add the &quot;circle&quot; class to it to make it appear circular.
+
+
+// ## Vídeo
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+h2 Vídeo 
+
+.container.section
+  .video-container
+    iframe(width='853' height='480' src='//www.youtube.com/embed/Q8TXgCzxEnw?rel=0' frameborder='0' allowfullscreen='')
+
+// --- end images__main

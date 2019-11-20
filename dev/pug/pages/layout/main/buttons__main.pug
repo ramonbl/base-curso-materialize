@@ -1,0 +1,208 @@
+// --- init buttons__main ---
+
+
+// ### COMPONENTES BOTÓN 
+
+
+
+  button:focus {
+    outline: none;
+    background-color: #2ab7a9;
+  }
+
+  .btn, .btn-large, .btn-small,
+  .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn, .btn-large, .btn-small,
+  .btn-floating,
+  .btn-large,
+  .btn-small,
+  .btn-flat {
+    font-size: 14px;
+    outline: 0;
+  }
+
+  .btn i, .btn-large i, .btn-small i,
+  .btn-floating i,
+  .btn-large i,
+  .btn-small i,
+  .btn-flat i {
+    font-size: 1.3rem;
+    line-height: inherit;
+  }
+
+  .btn:focus, .btn-large:focus, .btn-small:focus,
+  .btn-floating:focus {
+    background-color: #1d7d74;
+  }
+
+  .btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+  }
+
+  .btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #2bbbad;
+  }
+
+  .btn-block {
+    display: block;
+  }
+
+h2 BOTONES
+
+h3 Efectos simples
+.container 
+  .section 
+    .col.s12
+      a.yellow(href="#") a.yellow
+
+    .col.s12
+      a.btn(href="#") a.btn
+
+    .col.s12
+      a.btn.red(href="#") a.btn.red
+
+    .col.s12
+      button.btn button.btn
+
+    .col.s12
+      button.btn.green button.btn.green
+
+    .col.s12
+      button.btn-flat button.btn-flat
+
+    .col.s12
+      button.btn-small.green button.btn-small.green
+    .col.s12
+      button.btn-large.green button.btn-large.green
+    .col.s12
+      button.btn-flat.red button.btn-flat.green
+
+h3 Iconos
+p
+  a(href='https://material.io/resources/icons/?style=baseline') Icons - Material Design
+
+
+h3 Efecto Raised
+p Dan profondidad en página mayoritariamente plana
+p 
+  code .effect-waves 
+  | Clarea en el hover y oscurece en el click 
+p
+  code .waves-light 
+  | se nota al hacer click clareando el botón (por defecto vendría un oscurecimiento oscuro) 
+p otros
+  code .waves-purple, 
+  code .waves-orange,
+  code .waves-red,
+.container.section 
+
+    a.waves-effect.btn 
+      i.material-icons cloud
+      | button
+
+    a.waves-effect.waves-light.btn.red
+      i.material-icons.left cloud
+      | button 
+
+    a.waves-effect.waves-light.btn
+      i.material-icons.right cloud
+      | button
+
+.container.section
+  a.waves-effect.waves-light.btn 
+    i.material-icons cloud
+    span with icons
+
+  a.waves-effect.waves-light.btn 
+    i.material-icons.left cloud
+    span i.material-icons.left
+
+  a.waves-effect.waves-light.btn 
+    i.material-icons.right cloud
+    span i.material-icons.right
+
+.container.section
+  a.btn-floating.btn-large.waves-effect.waves-light.red
+    i.material-icons.left add
+    | a.btn-floating.btn-large.waves-effect.waves-light.red
+
+
+.container.section
+  a.waves-effect.waves-red.btn-flat a.waves-effect.waves-teal.btn-flat
+
+.container.section
+  button.btn.waves-effect.waves-light(type='submit' name='action')
+    | Submit
+    i.material-icons.right send
+
+h2 Tamaños:
+p sustituir clase. Por defecto se atan al contenido con un min-width. 
+p Se nota en tamaño vertical por el padding 
+  code .btn 
+  | por .btn-large o 
+  code .btn-small
+
+.container.section
+  a.waves-effect.waves-light.btn-small
+    i.material-icons.left cloud
+    | buttón
+
+  a.waves-effect.waves-light.btn-large
+    i.material-icons.right cloud
+    | button
+  
+h2 Disabled
+p Añadir al final la clase
+  code disabled
+.container.section
+  a.btn-large.disabled Button
+  a.btn.disabled Button
+  a.btn-flat.disabled Button
+  a.btn-floating.disabled
+    i.material-icons add
+
+
+.container
+  .section
+    .fixed-action-btn
+      a.btn-floating.btn-large.red
+        i.large.material-icons mode_edit
+      ul
+        li
+          a.btn-floating.red
+            i.material-icons insert_chart
+        li
+          a.btn-floating.yellow.darken-1
+            i.material-icons format_quote
+        li
+          a.btn-floating.green
+            i.material-icons publish
+        li
+          a.btn-floating.blue
+            i.material-icons attach_file
+      
+
+
+.container.section.yellow
+  .valign-wrapper.green
+    h5 This should be vertically aligned
+    h5 This should be vertically aligned fafsdf asdfasd fasdfasdf asdfasdf asdf asdfasdf asdf asdf asdf asdf asdf asdf asdf dsfasdf adsf sdf
+        
+// --- end buttons__main ---

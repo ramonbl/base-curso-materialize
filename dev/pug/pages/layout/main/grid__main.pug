@@ -1,0 +1,135 @@
+// --- init grid__main
+
+// ## .CONTAINER
+  Container es un contenedor autocentrado horizontalmente y tiene un ancho que, por defecto, depende del ancho de la pantalla.
+  .container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  }
+
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
+
+h2 .CONTAINER
+.container
+  .blue 
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ducimus id dolores accusantium pariatur? Nam ipsam possimus consequuntur id at, quibusdam ullam, eligendi voluptatem ea unde alias a voluptatibus quod? Dolorem reprehenderit in, quia aliquam officia tenetur delectus cupiditate? Laborum alias delectus saepe, quidem neque explicabo? Facilis, eos nulla dolores harum maiores aspernatur, iste vitae quidem doloremque nobis maxime et. At velit ullam corrupti ut soluta consequuntur, eaque dolorem corporis voluptate ipsa laboriosam, incidunt nesciunt neque voluptates quis natus ex? Ex vero recusandae officia minima earum, ducimus quod illo repudiandae nihil itaque voluptatum eveniet ipsum reprehenderit nemo necessitatibus facere dicta!
+
+
+// .SECTION
+  producen un padding vertical (para bloques )
+  .section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .section.no-pad {
+    padding: 0;
+  }
+
+  .section.no-pad-bot {
+    padding-bottom: 0;
+  }
+
+  .section.no-pad-top {
+    padding-top: 0;
+  }
+h2 .SECTION 
+
+h2.blue Título normal
+h2.section.blue Título de clase .section 
+
+.blue
+  p hola 
+
+.section.blue 
+  p hola
+
+
+
+// ## ROWS
+
+  Comenzamos línea infinita que se rompe cuando llegamos a 12 columnas.
+  Si una columna, no entra entera en el espacio disponible, comienza una nueva línea.
+  La altura del row crece con la columna más alta, las otras columnas no crecen con la más alta.
+  Podemos usar color de fondo en el row para simular que lo hacen
+  .row{
+    margin-left: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .row .col{
+    float: left;
+    padding: 0 0.75rem;
+    min-height: 1px;
+  }
+
+  .row .col[class*="push-"], .row .col[class*="pull-"] {
+    position: relative;
+  }
+
+  .row .col.s1{
+    width: 8.333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+h2 ROWS
+.row.black
+  .col.s1.red.white-text.center 1
+  .col.s1.orange.white-text.center 2
+  .col.s1.red.white-text.center 3
+  .col.s1.orange.white-text.center 4
+  .col.s1.red.white-text.center 5
+  .col.s1.orange.white-text.center 6
+  .col.s1.red.white-text.center 7
+  .col.s1.orange.white-text.center 8
+  .col.s1.red.white-text.center 9
+  .col.s1.orange.white-text.center 10
+  .col.s1.red.white-text.center 11
+  .col.s1.orange.white-text.center 12
+
+.row.black
+  .col.s12.red.white-text.center 12 / 12 columnas
+  .col.s6.green.white-text.center 6 / 12 columnas
+  .col.s6.blue.white-text.center 6 / 12 columnas
+
+.row.black
+  .col.s6.red.white-text.center 6 / 12 columnas
+  .col.s7.green.white-text.center 7 / 12 columnas
+
+.row.black
+  .col.s3.red.white-text.center 3 / 12 columnas
+  .col.s6.green.white-text.center 6 / 12 columnas
+  .col.s3.red.white-text.center 3 / 12 columnas
+
+// ## ROWS DENTRO DE CONTAINERS
+h2 ROWS EN CONTAINERS
+.container
+  .row.black
+    .col.s3.red.white-text.center 3 / 12 columnas
+    .col.s6.green.white-text.center.test 6 / 12 columnas
+    .col.s3.red.white-text.center 3 / 12 columnas
+
+// ## ROWS MEDIA-QUERIES
+  Por defecto, loa breakpoints están en: 0 (s), >=601 (m), >=993 (l), >=1201 (xl).
+
+h2 ROWS RESPONSIVES
+.container
+  .row.black
+    .col.s12.m3.red.white-text.center 3 / 12 columnas
+    .col.s12.m6.green.white-text.center 6 / 12 columnas
+    .col.s12.m3.red.white-text.center 3 / 12 columnas
+// --- end grid__main

@@ -1,0 +1,46 @@
+extends ../config/template
+
+
+prepend COMMENTS
+  // --- prepend block COMMENTS desde home.pug ---
+  // SOY home.pug
+  // --- end block COMMENTS desde home.pug
+  |
+  |
+append CONFIG
+  // --- append block CONFIG desde home.pug---
+  -
+    var siteName = 'RamonBL'
+    var pageTitle = 'Tipography'
+    var currentPage = `tipography`
+    var dirCss = `../css`
+
+  // nombre del sitio actualizado...
+  // titulo de la página actualizado...
+  // nombre de la página actualizado...
+
+  // --- end append CONFIG desde home.pug---
+  |
+  |
+append HEADER
+  // --- append HEADER desde home.pug ---
+  // no lo modifico
+  // --- end append HEADER desde home.pug ---
+  |
+  |
+block MAIN
+  // --- block MAIN desde home.pug ---
+  // --- include home__main.pug desde template.pug---
+  include layout/main/typography__main.pug
+  // --- home__main.pug included ---
+  // --- end block MAIN desde home.pug ---
+
+append FOOTER
+  // --- append FOOTER desde home.pug ---
+  // no lo modifico
+  // --- end append FOOTER desde home.pug ---
+
+append FINAL_SCRIPTS
+  // --- append FINAL_SCRIPTS desde home.pug ---
+  //
+  // --- end append FINAL_SCRIPTS desde home.pug ---

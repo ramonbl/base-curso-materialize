@@ -1,0 +1,76 @@
+// --- TEMPLATE INDEX ---
+
+
+block COMMENTS
+  // --- init block COMMENTS desde template.pug ---
+  // Esta página está usando templete.pug
+  // --- end block COMMENTS desde template.pug---
+|
+|
+block CONFIG
+  // --- init block CONFIG desde template.pug 
+  // --- include config.pug desde template.pug---
+  include config
+  // --- config.pug included ---
+  // --- end block CONFIG desde template.pug
+|
+|
+
+// --- HTML ---
+
+
+doctype
+html(lang="es")
+
+  // --- # HEAD ---
+  head
+    // --- include head.pug desde template.pug---
+    include layout/head
+    // --- head.pug included ---
+ 
+  // --- # BODY ---
+  body(id= `${currentPage.toLowerCase().split(' ').join('_')}` class= `body ${currentPage.toLowerCase().split(' ').join('_')}`)
+    |
+    |
+    // --- ## HEADER ---
+    header.rbl.red
+      // --- init block HEADER desde template.pug ---
+      block HEADER
+        // --- include Header.pug desde template.pug---
+        include layout/Header
+        // --- Header.pug included ---
+      // --- end block HEADER desde template.pug
+    |
+    |  
+    // --- ## MAIN ---  
+    main
+      // --- init block MAIN desde template.pug ---
+      block MAIN
+        // --- include Main.pug desde template.pug---
+        include layout/Main
+        // --- Main.pug included ---
+      // --- end block MAIN desde template.pug
+    |
+    |
+    // --- ## FOOTER ---
+    footer.rbl.red
+      // --- init block FOOTER desde template.pug ---
+      block FOOTER
+        // --- include footer.pug desde template.pug ---
+        include layout/Footer
+        // --- Footer.pug included ---
+      // --- end block FOOTER desde template.pug
+    |
+    |
+    // --- ## FINAL_SCRIPTS ---
+    // --- init block FINAL_SCRIPTS desde template.pug ---
+    block FINAL_SCRIPTS
+      // --- include final_scripts.pug desde template.pug ---
+      include layout/final_scripts.pug
+      // --- final_scripts.pug included ---
+    // --- end block FINAL_SCRIPTS desde template.pug
+
+
+    // end template.pug
+
+

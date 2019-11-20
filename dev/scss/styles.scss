@@ -1,0 +1,62 @@
+
+/* importante para que el footer se asiente abajo */
+
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/* CAMBIOS QUE NO AFECTAN AL MAIN */
+.rbl{
+  & a{
+    display: block;
+    padding: .5em;
+  }
+  
+  & .nav_horizontal{
+    &>li {
+      display: inline-block;
+      
+    }
+  }
+}
+/* Clases para marcar elementos */
+
+.rbl-grey{
+  border: 2px solid grey;
+  background-color: lightgrey;
+}
+.rbl-red{
+  border: 2px solid red;
+  background-color: lightgrey;
+}
+
+.rbl-green{
+  border: 5px solid green;
+  background-color: lightgreen;
+}
+
+.rbl-blue{
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+
+.color--prim{
+  color: white;
+  background-color: blue;
+}
+
+.test{
+  padding-bottom: 100%;
+  // height: 0;
+}
